@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+}
+
+.nav-link {
+  color: #777;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+
+.banner {
+  background-image: url("../img/banner.png");
+  height: 235px;
+  min-width: 780px;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+/* .banner {
+  background-image: url("../img/banner.png");
+  height: 235px;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+} */
+
+#estilo div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#estilo div img {
+  margin: 0 27px;
+  padding: 27px;
+  background-size: cover;
+}
+
+#estilo h1 {
+  font-weight: 800;
+  text-transform: lowercase;
+  font-size: 60px;
+  text-align: center;
+  margin: 68px 0;
+}
+#estilo {
+  margin-bottom: 207px;
+}
+
+#descontos {
+  background-color: #c2185b;
+}
+
+#descontos h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 44px;
+  text-align: center;
+  color: white;
+  padding: 60px 0;
+  margin: 0;
+}
+
+#descontos .descontos-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0 100px;
+}
