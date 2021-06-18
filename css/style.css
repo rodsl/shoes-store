@@ -12,13 +12,15 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
-
-header {
+header{
+  box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+}
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+
 }
 
 .nav-link {
@@ -90,4 +92,88 @@ header {
   flex-wrap: wrap;
 
   margin: 0 100px;
+}
+
+.contato {
+  display: flex;
+  padding: 0 2rem;
+}
+
+.contact-heading {
+  font-size: 40px;
+  font-weight: 600;
+  color: #575757;
+  padding-left: 2rem;
+}
+.contato form,
+article {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.1rem;
+  color: #9b9b9b;
+}
+
+input,
+select {
+  margin-bottom: 1.1rem;
+  padding: 0.3125rem 0.625rem;
+  border: 1px solid #9b9b9b
+
+}
+
+label {
+  font-size: 1,125;
+  margin-bottom: 0.3125rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.carregar-curriculo {
+  width: 118px;
+  padding: 4px 10px;
+  background-color: #c4c4c4;
+  color: #FFF;
+  text-transform: lowercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+div .upload-arquivo {
+  display: flex;
+  align-items: center;
+  padding-top: 22px;
+}
+div .carregar-curriculo {
+  margin-left: 20px;
+}
+
+div .disponibilidade {
+
+}
+
+.options {
+  display: flex;
+  padding-bottom: 10px;
+/* justify-content: space-between; */
+}
+
+.options div {
+  /* margin-right: 50px; */
+  flex: 1;
+}
+
+.enviar-form {
+background-color: #c2185b;
+color: white;
+font-weight: 700;
+font-size: 20px;
+padding: 5px 0;
+margin-top: 22px;
+border: none;
 }
