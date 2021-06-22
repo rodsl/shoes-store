@@ -12,7 +12,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
-header{
+header {
   box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
 }
 .header {
@@ -20,7 +20,6 @@ header{
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-
 }
 
 .nav-link {
@@ -97,6 +96,7 @@ header{
 .contato {
   display: flex;
   padding: 0 2rem;
+  flex-wrap: wrap;
 }
 
 .contact-heading {
@@ -110,6 +110,8 @@ article {
   flex: 1;
 }
 
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -121,12 +123,11 @@ input,
 select {
   margin-bottom: 1.1rem;
   padding: 0.3125rem 0.625rem;
-  border: 1px solid #9b9b9b
-
+  border: 1px solid #9b9b9b;
 }
 
 label {
-  font-size: 1,125;
+  font-size: 1, 125;
   margin-bottom: 0.3125rem;
 }
 
@@ -138,7 +139,7 @@ input[type="file"] {
   width: 118px;
   padding: 4px 10px;
   background-color: #c4c4c4;
-  color: #FFF;
+  color: #fff;
   text-transform: lowercase;
   text-align: center;
   cursor: pointer;
@@ -154,13 +155,12 @@ div .carregar-curriculo {
 }
 
 div .disponibilidade {
-
 }
 
 .options {
   display: flex;
   padding-bottom: 10px;
-/* justify-content: space-between; */
+  /* justify-content: space-between; */
 }
 
 .options div {
@@ -169,11 +169,69 @@ div .disponibilidade {
 }
 
 .enviar-form {
-background-color: #c2185b;
-color: white;
-font-weight: 700;
-font-size: 20px;
-padding: 5px 0;
-margin-top: 22px;
-border: none;
+  background-color: #c2185b;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px 0;
+  margin-top: 22px;
+  border: none;
+}
+
+@media (max-width: 736px) {
+  .contato form,
+article {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+  .contato form {
+    order: 1;
+  }
+
+  .contato article {
+    order: 0;
+  }
+}
+
+
+.footer {
+  background-color: #c2185b;
+  color: #fff;
+  padding: 10px 20px 30px;
+  margin-top: 25px;
+
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .container div:first-of-type {
+  width: 30%;
+}
+
+.categorias,
+.institucional {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#banner-frete-gratis{
+  background-color: #c2185b;
+  width: 100%;
+
+}
+.banner-frete-gratis{
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+text-transform: uppercase;
 }
