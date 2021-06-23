@@ -226,9 +226,13 @@ article {
 #banner-frete-gratis{
   background-color: #c2185b;
   width: 100%;
+  position: sticky;
+  top: 0px;
 
 }
 .banner-frete-gratis{
+
+
 display: flex;
 justify-content: center;
 align-items: center;
