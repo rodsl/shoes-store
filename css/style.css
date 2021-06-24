@@ -110,8 +110,6 @@ article {
   flex: 1;
 }
 
-
-
 form {
   display: flex;
   flex-direction: column;
@@ -176,14 +174,21 @@ div .disponibilidade {
   padding: 5px 0;
   margin-top: 22px;
   border: none;
+  box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+  transition: all 3s;
+}
+
+.enviar-form:hover {
+  color: #c2185b;
+  background-color: white;
 }
 
 @media (max-width: 736px) {
   .contato form,
-article {
-  flex-grow: 1;
-  flex-shrink: 0;
-}
+  article {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
   .contato form {
     order: 1;
   }
@@ -193,13 +198,11 @@ article {
   }
 }
 
-
 .footer {
   background-color: #c2185b;
   color: #fff;
   padding: 10px 20px 30px;
   margin-top: 25px;
-
 }
 
 .footer a {
@@ -222,16 +225,14 @@ article {
   flex-direction: column;
 }
 
-
-#banner-frete-gratis{
+#banner-frete-gratis {
   background-color: #c2185b;
   width: 100%;
-
 }
-.banner-frete-gratis{
-display: flex;
-justify-content: center;
-align-items: center;
-color: #fff;
-text-transform: uppercase;
+.banner-frete-gratis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
 }
